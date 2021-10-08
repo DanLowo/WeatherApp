@@ -1,10 +1,10 @@
 import React from 'react'
-import "../assets/css/Jumbotron.css"
+import "./assets/css/Jumbotron.css"
 
 const Jumbotron = () => {
     return (
         <div id="Jumbotron">
-            {/* <p>dipsi</p> */}
+            
         </div>
     )
 }
