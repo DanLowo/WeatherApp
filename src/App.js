@@ -1,5 +1,5 @@
 import "./assets/css/App.css"
-import Jumbotron from "./components/Jumbotron";
+import Jumbotron from "./Jumbotron";
 
 
 function App() {
