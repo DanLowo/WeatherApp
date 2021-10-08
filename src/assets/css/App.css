@@ -1,0 +1,12 @@
+:root {
+    --primary-background-color: #333333;
+}
+
+body {
+    margin: 0;
+}
+
+.App {
+    width: 100vw;
+    display: flex;
+}
