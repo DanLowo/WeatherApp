@@ -1,0 +1,15 @@
+#Jumbotron {
+    width: 28vw;
+    height: 100vh;
+    background-color: var(--primary-background-color);
+}
+
+@media (max-width: 500px) {
+    #Jumbotron {
+        width: 100vw;
+    }
+}
+
+#Jumbotron > p {
+    margin-top: 0;
+}
