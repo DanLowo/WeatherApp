@@ -1,8 +1,141 @@
 #main {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--main-background-color);
 }
+
+#body {
+    padding: 120px;
+    padding-top: 30px;
+}
+
+@media (max-width: 550px) {
+    #body {
+        padding: 20px;
+    }
+    .weather-update {
+        justify-content: space-between;
+    }
+}
+
+.weather-update {
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.weather-prediction {
+    background-color: var(--primary-background-color);
+    flex-basis: 120px;
+    height: 170px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-prediction img {
+    max-width: 100%;
+    width: 60px;
+}
+
+
+#highlight {
+    padding-top: 30px;
+}
+
+#highlight h3 {
+    color: white;
+}
+
+#highlight #section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#highlight .section-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 320px;
+    padding-bottom: 15px;
+    background-color: var(--primary-background-color);
+}
+
+@media (max-width: 550px) {
+    #highlight #section {
+        flex-direction: column;
+        gap: 40px;
+    }
+    #highlight .section-box {
+        flex-basis: 0;
+    }
+    .section-box #measurement span {
+        margin-top: 25px;
+    }
+}
+
+.section-box  h1 {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.section-box h3 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.section-box h3 span {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.section-box h5 {
+    color: white;
+    font-weight: 400;
+    /* position: relative; */
+}
+
+.section-box h5 span {
+    transform: rotate(135deg) scale(0.7);
+}
+
+.section-box #measurement {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.section-box #measurement span {
+    color: rgb(194, 188, 188);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.section-box #bar {
+    width: 65%;
+    background-color: #E7E7EB;
+    border-radius: 10px;
+}
+
+.section-box #bar p {
+    background-color: #FFEC65;
+    width: 30%;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 0;
+}
+
 
 #search {
     padding: 30px;
