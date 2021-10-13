@@ -1,10 +1,10 @@
 #Jumbotron {
     width: 40vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--primary-background-color);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     #Jumbotron {
         width: 100vw;
     }
