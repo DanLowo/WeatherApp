@@ -4,12 +4,6 @@
     background-color: var(--main-background-color);
 }
 
-@media (max-width: 500px) {
-    #main {
-        width: 100vw;
-    }
-}
-
 #search {
     padding: 30px;
 }
