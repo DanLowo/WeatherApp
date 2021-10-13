@@ -21,7 +21,7 @@ const Search = ({ closeSearch }) => {
     return (
         <div id="search">
             <section align="right" onClick={closeSearch} >
-                <Icon name="face" />
+                <Icon name="close" />
             </section>
             <div className="search-form">
                 <form onSubmit={handleSearch}>
