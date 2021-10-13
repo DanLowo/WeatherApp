@@ -1,16 +1,23 @@
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { searchAndSetWeather, changeLocation } from '../store/weather'
 import Icon from './Icon'
 
 const Search = ({ closeSearch }) => {
+    const dispatch = useDispatch()
+    const { searchResult } = useSelector(state => state.weather)
     const [searchText, setSearchText] = useState("")
 
     const handleSearch = (e) => {
         e.preventDefault()
-        console.log(searchText);
+        dispatch(searchAndSetWeather(searchText))
     }
 
-    const LocationItem = ({location}) => (
-        <div className="location-item">
+    const LocationItem = ({location, woeid}) => (
+        <div className="location-item"  onClick={() => {
+            dispatch(changeLocation(woeid))
+            closeSearch()
+        }}>
             <p className="location-item-text">{location}</p>
             <span className="location-item-icon">
                 <Icon name="chevron_right" />
@@ -31,9 +38,11 @@ const Search = ({ closeSearch }) => {
             </div>
 
             <div className="locations">
-                <LocationItem location="Lagos" />
-                <LocationItem location="Berlin" />
-                <LocationItem location="Bercelonia" />
+                {
+                    searchResult.map((item, k) => {
+                        return <LocationItem key={k} location={item.title} woeid={item.woeid} />
+                    })
+                }
             </div>
             
         </div>
