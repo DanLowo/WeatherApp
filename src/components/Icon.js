@@ -1,17 +1,27 @@
-import React from 'react'
+import React from "react";
 
 const Icon = (props) => {
-    const {
-        name,
-        // iconColor
-        background,
-    } = props;
+  const {
+    name,
+    background,
+    text,
+  } = props;
 
-    return (
-        <span className={`material-icons custom-icon ${!background ? 'no-background' : ''}`}>
-            {name}
-        </span>
-    )
-}
+  return text ? (
+    <span
+      className={`custom-icon text`}
+    >
+      {name}
+    </span>
+  ) : (
+    <span
+      className={`material-icons custom-icon ${
+        !background ? "no-background" : ""
+      }`}
+    >
+      {name}
+    </span>
+  );
+};
 
-export default Icon
+export default Icon;

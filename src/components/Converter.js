@@ -8,10 +8,10 @@ const Converter = () => {
     return (
         <div align="right">
             <button style={{backgroundColor: 'transparent', border: 0}} onClick={() => dispatch(changeUnit('C'))}>
-                <Icon name="C" background />
+                <Icon text name="C" background />
             </button>
             <button style={{backgroundColor: 'transparent', border: 0}} onClick={() => dispatch(changeUnit('F'))}>
-                <Icon name="F" background />
+                <Icon text name="F" background />
             </button>
         </div>
     )

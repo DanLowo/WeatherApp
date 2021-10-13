@@ -27,6 +27,10 @@ body {
     padding: 7px 8px 7px 7px;
 }
 
+.custom-icon.text {
+    padding: 8px 11px 8px 11px;
+}
+
 .custom-icon.no-background {
     color: var(--secondary-background-color);
     font-size: 22px;
