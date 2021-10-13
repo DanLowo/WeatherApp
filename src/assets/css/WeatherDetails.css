@@ -1,0 +1,36 @@
+#weather-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather-details #weather-degree {
+    font-size: 70px;
+    color: white;
+}
+
+#weather-details #weather-degree-symbol {
+    font-size: 22px;
+    position: relative;
+    left: 2px;
+    bottom: 13px;
+    font-weight: lighter;
+    color: var(--secondary-background-color);
+}
+
+#weather-details .weather-type {
+    color: #A09FB1;
+}
+
+#weather-details .current-date {
+    color: #A09FB1;
+    font-size: 15px;
+}
+
+#weather-details .current-location {
+    color: #A09FB1;
+    font-size: 12px;
+    position: relative;
+    left: 3px;
+    bottom: 7px;
+}
